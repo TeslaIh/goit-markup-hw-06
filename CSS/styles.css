@@ -328,16 +328,14 @@ img {
 }
 
 .modal-form {
-  width: 448px;
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin-left: 0;
-  margin-right: 0;
+  width: 448px;
 }
 
 .modal-form-title {
-  margin: 40px 40px 12px 40px;
+  margin: 40px 0px 12px 41px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -351,9 +349,14 @@ img {
 }
 
 .form-elements {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0 40px;
+}
+
+.form-li {
+  position: relative;
 }
 
 .form-elemets .form-li + .form-li {
@@ -372,9 +375,13 @@ img {
   color: var(--primary-text-color);
 }
 
+.input-form {
+  position: relative;
+  padding-left: 32px;
+}
+
 .input-form,
 .text-form {
-  position: relative;
   outline: none;
   width: 448px;
   height: 40px;
@@ -386,11 +393,24 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--tittle-text-color);
+  fill: var(--tittle-text-color);
+  transition: border-color var(--cubic-anim);
+  cursor: pointer;
 }
 
-.input-form:hover:focus,
-.text-form:hover:focus {
+.form-li:hover .form-icon,
+.form-li:focus .form-icon {
+  fill: var(--accent-color);
+}
+
+.input-form:hover,
+.input-form:focus {
   outline: none;
+  border-color: var(--accent-color);
+}
+
+.text-form:hover,
+.text-form:focus {
   border-color: var(--accent-color);
 }
 
@@ -406,8 +426,8 @@ img {
 
 .form-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 37px;
+  left: 12px;
   width: 18px;
   height: 18px;
   fill: var(--tittle-text-color);
@@ -437,7 +457,30 @@ img {
 
 .checkbox {
   margin-left: 7px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.checkbox:checked + .icon {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background-image: url('../images/icons/checkbox-on.svg');
+}
+
 
 /* Features */
 
@@ -666,6 +709,7 @@ img {
 .clients-link:focus .icon-logo {
   fill: var(--accent-color);
 }
+
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
