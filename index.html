@@ -65,30 +65,44 @@
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
                         </button>
-
-                        <form class="modal-form" action="/my-handling-form-page" method="post">
-                            <ul class="form-elements list">
-                                <li>
-                                    <label for="name">Имя</label>
-                                    <input type="text" id="name" name="user_name">
+                            
+                        <form class="modal-form" method="post">
+                            <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                            <ul class="form-elements">
+                                <li class="form-li">
+                                    <label class="label-form" for="name">Имя</label>
+                                    <input class="input-form" type="text" id="name" name="user_name" />
+                                    <svg class="form-icon" width="18px" height="18px">
+                                        <use href="./images/icons.svg#icon-person"></use>
+                                    </svg>
+                                    
                                 </li>
-                                <li>
-                                    <label for="phone">Телефон</label>
-                                    <input type="email" id="mail" name="user_email">
+                                <li class="form-li">
+                                    <label class="label-form" for="phone">Телефон</label>
+                                    <input class="input-form" type="email" id="phone" name="user_phone" value="+380">
                                 </li>
-                                <li>
-                                    <label for="mail">Почта</label>
-                                    <input type="email" id="mail" name="user_email">
+                                <li class="form-li">
+                                    <label class="label-form" for="mail">Почта</label>
+                                    <input class="input-form" type="email" id="mail" name="user_email" placeholder="example@mail.com">
                                 </li>
-                                <li>
-                                    <label for="msg">Комментарий</label>
-                                    <textarea id="msg" name="user_message"></textarea>
+                                <li class="form-li">
+                                    <label class="label-form" for="msg">Комментарий</label>
+                                    <textarea class="text-form" id="msg" name="user_message" placeholder="Введите текст"></textarea>
                                 </li>
                             </ul>
+
+                            <label class="label-check">
+                                <input class="checkbox" type="checkbox" name="check" value="assign" />
+                                Соглашаюсь с рассылкой и принимаю<p class="check-text">Условия договора</p>
+                            </label>
+                            
+
                         </form>
-                        <button type="submit" class="button-send">
-                            <p>Отправить</p>
-                        </button>
+                        <div class="sending">
+                            <button class="button-send" type="submit">
+                                <p>Отправить</p>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
