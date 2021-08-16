@@ -436,8 +436,7 @@ img {
 
 .checkbox-container{
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  align-items: center;
 }
 
 .check-text{
@@ -473,7 +472,6 @@ img {
 
 .icon {
   position: relative;
-  top: 2px;
   display: inline-block;
   width: 15px;
   height: 15px;
