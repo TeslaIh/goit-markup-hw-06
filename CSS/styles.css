@@ -437,12 +437,12 @@ img {
   transition: fill var(--cubic-anim);
 }
 
-.checkbox-container{
+.checkbox-container {
   display: flex;
   align-items: center;
 }
 
-.check-text{
+.check-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -480,15 +480,18 @@ img {
   height: 15px;
   margin-right: 5px;
   cursor: pointer;
+  border: 2px solid var(--tittle-text-color);
+  border-radius: 3px;
 }
 
 .checkbox:checked + .icon {
   outline: none;
   border: none;
   border-radius: 2px;
-  background-image: url('../images/icons/checkbox-on.svg');
+  background-image: url("../images/icons/checkbox-on.svg");
+  background-size: cover;
+  background-position: center;
 }
-
 
 /* Features */
 
@@ -552,7 +555,6 @@ img {
 }
 
 .gallery {
-
   display: flex;
 }
 
