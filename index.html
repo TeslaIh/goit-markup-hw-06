@@ -58,63 +58,7 @@
         
             <!-- Модалка -->
             <button class="button" type="button" data-modal-open>Заказать услугу</button>
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        <button type="button" class="icon-close" data-modal-close>
-                            <svg class="icon-close-logo">
-                                <use href="./images/icons.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                            
-                        <form class="modal-form" method="post">
-                            <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                            <ul class="form-elements">
-                                <li class="form-li">
-                                    <label class="label-form" for="name">Имя</label>
-                                    <input class="input-form" type="text" id="name" name="user_name" />
-                                    <svg class="form-icon" width="18px" height="18px">
-                                        <use href="./images/icons.svg#icon-person"></use>
-                                    </svg>
-                                </li>
-                                <li class="form-li">
-                                    <label class="label-form" for="phone">Телефон</label>
-                                    <input class="input-form" type="email" id="phone" name="user_phone" value="+380">
-                                    <svg class="form-icon" width="18px" height="18px">
-                                        <use href="./images/icons.svg#icon-phone"></use>
-                                    </svg>
-                                </li>
-                                <li class="form-li">
-                                    <label class="label-form" for="mail">Почта</label>
-                                    <input class="input-form" type="email" id="mail" name="user_email" placeholder="example@mail.com">
-                                    <svg class="form-icon" width="18px" height="18px">
-                                        <use href="./images/icons.svg#icon-email"></use>
-                                    </svg>
-                                </li>
-                                <li class="form-li">
-                                    <label class="label-form" for="msg">Комментарий</label>
-                                    <textarea class="text-form" id="msg" name="user_message" placeholder="Введите текст"></textarea>
-                                </li>
-                            </ul>
-
-                            <label class="label-check">
-                                <span class="checkbox-container">
-                                    <input class="checkbox" type="checkbox" name="check" value="assign" />
-                                    <svg class="icon" width="15px" height="15px">
-                                        <use href="./images/icons.svg#icon-checkbox-off"></use>
-                                    </svg>
-                                    <span>Соглашаюсь с рассылкой и принимаю <a class="check-text">Условия договора</a></span>
-                                </span>
-                            </label>
-                            
-
-                        </form>
-                        <div class="sending">
-                            <button class="button-send" type="submit">
-                                Отправить
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                
                 
         </section>
 
@@ -164,7 +108,7 @@
         </section>
 
         <!--Чем мы занимаемся-->
-        
+
         <section class="descr-gallery">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
@@ -179,7 +123,7 @@
                     </li>
                     <li class="item">
                         <div class="box-descr">
-                         <img src="./images/box-2.jpg" alt="Телефон и клава" width="370">
+                        <img src="./images/box-2.jpg" alt="Телефон и клава" width="370">
                         <div class="overlay-descr">
                         <p class="overlay-descr-text">Мобильные приложения</p>
                         </div>
@@ -469,6 +413,64 @@
 
         </div>
     </footer>
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="icon-close" data-modal-close>
+                <svg class="icon-close-logo">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+    
+            <form class="modal-form" method="post">
+                <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <ul class="form-elements">
+                    <li class="form-li">
+                        <label class="label-form" for="name">Имя</label>
+                        <input class="input-form" type="text" id="name" name="user_name" />
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </li>
+                    <li class="form-li">
+                        <label class="label-form" for="phone">Телефон</label>
+                        <input class="input-form" type="email" id="phone" name="user_phone" value="+380">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </li>
+                    <li class="form-li">
+                        <label class="label-form" for="mail">Почта</label>
+                        <input class="input-form" type="email" id="mail" name="user_email" placeholder="example@mail.com">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </li>
+                    <li class="form-li">
+                        <label class="label-form" for="msg">Комментарий</label>
+                        <textarea class="text-form" id="msg" name="user_message" placeholder="Введите текст"></textarea>
+                    </li>
+                </ul>
+    
+                <label class="label-check">
+                    <span class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="check" value="assign" />
+                        <svg class="icon" width="15px" height="15px">
+                            <use href="./images/icons.svg#icon-checkbox-off"></use>
+                        </svg>
+                        <span>Соглашаюсь с рассылкой и принимаю <a class="check-text">Условия договора</a></span>
+                    </span>
+                </label>
+    
+    
+            </form>
+            <div class="sending">
+                <button class="button-send" type="submit">
+                    Отправить
+                </button>
+            </div>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 

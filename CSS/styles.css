@@ -44,6 +44,7 @@ link {
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -328,10 +329,12 @@ img {
 }
 
 .modal-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: start;
   width: 448px;
+  z-index: 1;
 }
 
 .modal-form-title {
@@ -538,6 +541,7 @@ img {
 .descr-gallery {
   padding-bottom: 94px;
 }
+
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -548,9 +552,8 @@ img {
 }
 
 .gallery {
+
   display: flex;
-  position: relative;
-  z-index: 1;
 }
 
 .gallery .item + .item {
@@ -564,7 +567,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .overlay-descr {
