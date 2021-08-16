@@ -434,7 +434,13 @@ img {
   transition: fill var(--cubic-anim);
 }
 
-.check-text {
+.checkbox-container{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.check-text{
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -444,10 +450,9 @@ img {
 }
 
 .label-check {
-  margin: 20px 51px 30px 54px;
+  margin: 20px 51px 30px 52px;
   display: flex;
   width: 100%;
-  text-align: left;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -467,6 +472,8 @@ img {
 }
 
 .icon {
+  position: relative;
+  top: 2px;
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -830,21 +837,22 @@ img {
   margin-bottom: 20px;
 }
 
-.subscr-place {
-  display: flex;
-}
-
 .button-subscr:hover,
 .button-subscr:focus {
   background-color: var(--button-background-color);
 }
 
+.button-place {
+  display: flex;
+  justify-content: baseline;
+  text-align: center;
+}
+
 .button-subscr {
+  display: flex;
   position: relative;
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
-  display: flex;
-  text-align: center;
   font-size: 16px;
   line-height: 1.9;
   font-weight: 700;
@@ -858,14 +866,9 @@ img {
   cursor: pointer;
 }
 
-.icon-submit {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  margin-left: 10px;
-}
-
 .submit-logo {
+  display: flex;
+  margin-left: 10px;
   fill: var(--secondary-text-color);
   width: 24px;
   height: 24px;
@@ -874,6 +877,7 @@ img {
 /* Form Subscribe */
 
 .form-subcr {
+  display: flex;
   position: relative;
   width: 358px;
   margin-left: auto;

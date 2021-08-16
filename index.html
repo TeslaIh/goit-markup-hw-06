@@ -97,11 +97,14 @@
                             </ul>
 
                             <label class="label-check">
-                                <input class="checkbox" type="checkbox" name="check" value="assign" />
-                                <svg class="icon" width="15px" height="15px">
-                                    <use href="./images/icons.svg#icon-checkbox-off"></use>
-                                </svg>
-                                Соглашаюсь с рассылкой и принимаю<p class="check-text">Условия договора</p>
+                                <div class="checkbox-container">
+                                    <input class="checkbox" type="checkbox" name="check" value="assign" />
+                                    <svg class="icon" width="15px" height="15px">
+                                        <use href="./images/icons.svg#icon-checkbox-off"></use>
+                                    </svg>
+                                    <span>Соглашаюсь с рассылкой и принимаю <a class="check-text">Условия договора</span>
+                                </div>
+                                
                             </label>
                             
 
@@ -448,24 +451,21 @@
             </div>
 
             <div class="subscribe-content">
-                <p class="subscribe">Подпишитесь на рассылку</p>
-                <div class="subscr-place">
+            <p class="subscribe">Подпишитесь на рассылку</p>
                 <form class="form-subcr" name="subscribe-form" autocomplete="on" novalidate>
                     <div class="form-field-subcr">
-                        <label for="user_email">
                             <input type="email" placeholder="E-mail" id="user-email" />
-                        </label>
                     </div>
+                    <span class="button-place">
+                        <button type="submit" class="button-subscr">
+                            <p>Подписаться</p>
+                                <svg class="submit-logo">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                        </button>
+                    </span>
+                    
                 </form>
-            
-                <button type="submit" class="button-subscr">
-                    <p>Подписаться</p>
-                    <div class="icon-submit">
-                        <svg class="submit-logo">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                </button>
-            </div>
             </div>
 
         </div>
